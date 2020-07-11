@@ -1,0 +1,32 @@
+Exercício 1 - 
+Sistema de Aluguel de Imóveis;
+
+Regras de Negócio:
+
+Proprietários poderão cadastrar imóveis para aluguel (inúmeros);
+Imóveis terão informações como: tamanho, quantidade de banheiros, vagas de garagem, quartos, tipo de imóvel, valor do aluguel, valor do condomínio se tiver, etc.
+Os interessados em alugar poderão entrar em contato com os proprietários.
+Atividades do Exercício:
+
+Decidir quais tabelas devem ser criadas;
+Definir quais campos e tipos devem ser criados;
+
+CREATE TABLE posts (
+        tamanho INT,
+        qtd_banheiros INT,
+        vagas_garagem INT, 
+        quartos INT,
+        tipo_imóvel TEXT,
+        valor_aluguel REAL,
+        valor_condomínio REAL,
+        id_post SERIAL
+);
+
+CREATE TABLE proprietario (
+        id_proprietario SERIAL,
+        nome TEXT,
+        whatsapp TEXT,
+        imovel_cadastrado BOOLEAN 
+);
+
+
