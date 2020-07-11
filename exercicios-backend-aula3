@@ -1,4 +1,6 @@
-Exercício 1 - 
+Cheatsheet com os comandos mais comuns do SQL - https://tableplus.com/blog/2018/06/postgresql-data-types.html
+
+---->Exercício 1 - https://hackmd.io/meCJ0k_6QHWF6xo4HCwaTQ
 Sistema de Aluguel de Imóveis;
 
 Regras de Negócio:
@@ -11,6 +13,7 @@ Atividades do Exercício:
 Decidir quais tabelas devem ser criadas;
 Definir quais campos e tipos devem ser criados;
 
+## BUILD SCHEMA
 CREATE TABLE posts (
         tamanho INT,
         qtd_banheiros INT,
@@ -28,5 +31,22 @@ CREATE TABLE proprietario (
         whatsapp TEXT,
         imovel_cadastrado BOOLEAN 
 );
+
+
+----> Exercício 2: https://hackmd.io/NTPXFPT5TV69QZGG-vcD-A
+Cardápio Digital
+
+Regras de Negócio:
+
+Produtos podem ser cadastrados com informações de nome, preço, porção servida, ingredientes, tempo de preparo.
+
+Extra: O cliente pediu para que a gente tivesse combos de produtos. Então se um usuário pedisse um combo de sanduiche, teria o sanduiche, refrigerante e batata com um novo valor. Como a gente poderia imaginar essa funcionalidade?
+
+Atividades do Exercício:
+
+Decidir quais tabelas devem ser criadas;
+Definir quais campos e tipos devem ser criados;
+Definir scripts de inserção, atualização e deleção de um registro.
+
 
 
