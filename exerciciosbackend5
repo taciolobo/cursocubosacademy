@@ -1,0 +1,76 @@
+// SQL_DBeaver
+
+//Exercício 1
+
+select distinct
+		regiao
+from 
+	countries
+order by regiao 
+
+
+//Exercício 2
+
+select
+	regiao, count(pais) as paises
+from
+	countries
+group by regiao
+order by
+	count(pais) desc ;
+  
+  //Exercício 3
+  
+  select
+	pais, telefonia_movel
+from
+	countries
+where
+	populacao > 5000000
+	and densidade_populacional >= 250
+	and pib > 1000
+order by
+	telefonia_movel asc 
+limit 5;
+
+  //Exercício 4
+
+select
+	pais, telefonia_movel
+from
+	countries
+where
+	populacao > 5000000
+	and densidade_populacional >= 250
+	and pib > 1000
+order by
+	telefonia_movel asc 
+limit 5
+offset 5
+
+//Exercicio 5
+
+select
+	pais
+from
+	countries
+where
+	(regiao = 'SUB-SAHARAN AFRICA' or regiao = 'NORTHERN AFRICA' or regiao = 'NEAR EAST')
+	and industria_porcentagem > 0.66
+	and (pib) > 5000
+order by
+	pais asc;
+  
+  // Exercício 6
+  select
+	pais
+from
+	countries
+where
+	(industria_porcentagem + servicos_porcentagem) >= 0.75
+	and alfabetizacao > 90
+	and taxa_migratoria = 0
+	and (regiao != 'NORTHERN AMERICA' and regiao != 'LATIN AMER. & CARIB' and regiao != 'EASTERN EUROPE' and regiao != 'WESTERN EUROPE')
+order by
+	pais asc;
+
