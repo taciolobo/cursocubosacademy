@@ -1,0 +1,109 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.menu {
+    background: #F1F1F1;
+    padding: 24px 16px;
+}
+
+body {
+    background: #FF6A28;
+}
+
+.content {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.titulo {
+    font-weight: 700;
+    color: #FF6A28;
+    font-size: 28px;
+    display: inline-block;
+}
+
+.links{
+    display: inline-block;
+    margin-left: 31px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    padding: 0 16px;
+}
+
+.receita {
+    background: #F5F5F5;
+    padding: 16px;
+    margin-top: 24px;
+    border-radius: 4px;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+h2 span{
+    color: #777;
+    margin-left: 8px;
+    font-size: 17px;
+}
+
+p {
+    color: #777;
+    margin: 8px 0;
+    font-size: 12px;
+}
+
+.image{
+    display: block;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.imagemReceita{
+    width: 266px;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+ul, ol {
+    margin-left: 20px;
+}
+
+.quadrado{
+    list-style: square;
+    padding-bottom: 7px;
+}
+
+li:first-child{
+    margin-top: 20px;
+}
+
+li:last-child{
+    margin-bottom: 20px;
+}
+
+.conteudo{
+    display: block;
+    text-align: center;
+}
+
+.texto{
+    color: #000;
+    font-size: 12px;
+    margin: 12px;
+}
+
+table{
+    display: inline-block;
+}
