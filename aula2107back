@@ -1,0 +1,52 @@
+//EX1 
+select listed_in, count(listed_in)
+from netflix 
+group by listed_in
+order by count(listed_in) desc
+limit 5
+;
+
+
+//EX2
+select listed_in, avg(split_part(duration,' ', 1)::INTEGER) as duration
+from netflix
+where type='Movie'
+group by listed_in
+order by duration desc
+limit 5
+;
+
+
+//EX3
+select release_year, unnest(string_to_array(listed_in, ', ')), count(listed_in)
+from netflix
+where type='TV Show'
+group by release_year, listed_in
+order by count(release_year) desc
+limit 5
+;
+
+//EX4
+select count(date_part('year', date_added))
+from netflix
+where date_part('year', date_added) != release_year
+;
+
+//EX5
+select distinct country, type, count(country) 
+from netflix
+where type = 'TV Show' and country!= 'United States'
+group by country, type
+order by count(country) desc
+limit 5
+;
+
+//EX6
+select listed_in, rating, count(*)
+from netflix
+where rating='R' or rating='NC17'
+group by LISTED_IN, RATING
+order by COUNT(*) desc limit 5
+;
+
+
