@@ -1,0 +1,73 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input {
+    display: block;
+    background-color: #dbe4e9;
+    border-radius: 5px;
+    height: 35px;
+    width: 200px;
+    border: 0px;
+}
+
+label {
+    font-size: 16px;
+}
+
+select {
+    display: block;
+    background-color: #dbe4e9;
+    border-radius: 5px;
+    height: 40px;
+    width: 50px;
+    border: 0px;
+}
+
+.comoConheceu {
+    font-weight: 700;
+}
+
+.selectRadio {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    margin: 3px;
+}
+
+.eachRadio {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+textarea {
+    display: block;
+    background-color: #dbe4e9;
+    border-radius: 5px;
+    height: 75px;
+    width: 275px;
+    border: 0px;
+}
+
+.termo {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    margin: 3px;
+}
+
+button {
+    padding: 5px;
+    width: 135px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: #dbe4e9;
+    border: 0px;
+
+}
